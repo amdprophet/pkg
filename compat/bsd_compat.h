@@ -146,6 +146,10 @@ char * strnstr(const char *s, const char *find, size_t slen);
 #define MAXLOGNAME 33
 #endif
 
+#ifndef __uintptr_t
+#define __uintptr_t uintptr_t
+#endif
+
 #ifndef __DECONST
 #define __DECONST(type, var)    ((type)(uintptr_t)(const void *)(var))
 #endif
